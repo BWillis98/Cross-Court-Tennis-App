@@ -4,28 +4,34 @@ import java.util.Random;
 
 public class Runner {
 	public static void main(String[] args) {
-		/*
-		Player x = new Player("Brandon is 1", 1000);
-		Player y = new Player("Should be 3", 800);
-		Player asdf = new Player("Should be 5", 300);
-		Player sfk = new Player("Should be 2", 950);
-		Player aos = new Player("Should be 7", 0);
-		Player aso = new Player("Should be 6", 150);
-		Player aosi = new Player("Should be 4", 400);
-		*/
-		for (int i = 0; i < 10000; i++)
-		{
-			Random r = new Random();
-			int points = r.nextInt(10000);
-			new Player("Name", points);
-		}
 		
-		System.out.println("Before:");
-		printRanks();
+		Player Brandon = new Player("Willis");
+		Player y = new Player("Kawecki");
+		Player asdf = new Player("Federer");
+		Player sfk = new Player("Djokovic");
+		Player aos = new Player("Isner");
+		Player aso = new Player("Monfils");
+		Player aosi = new Player("Wawrinka");
 		
 		Rankings.organizeRanks();
-	
-		System.out.println("\nAfter:");
+		
+		System.out.println("Now for the match");
+		Rankings.matchReport(y, Brandon, 6, 3, 6, 4);
+		printRanks();
+		
+		/*
+		 * This is a random system to do random matches.
+		 * It turns out my system works and the rankings work out beautifully :)
+		 * On to the next thing.
+		 */
+		for (int i = 0; i < 150; i++)
+		{
+			Random r = new Random();
+			Player PlayerOne = Rankings.ranks.get(r.nextInt(Rankings.ranks.size()));
+			Player PlayerTwo = Rankings.ranks.get(r.nextInt(Rankings.ranks.size()));
+			
+			Rankings.matchReport(PlayerOne, PlayerTwo, r.nextInt(7), r.nextInt(7), r.nextInt(7), r.nextInt(7));
+		}
 		printRanks();
 	}
 	
@@ -33,8 +39,9 @@ public class Runner {
 	{
 		for (int i = 0; i < Rankings.ranks.size(); i++)
 		{
-			System.out.println(Rankings.ranks.get(i).name +
+			System.out.println((i + 1) + ". " + Rankings.ranks.get(i).name +
 					" " + Rankings.ranks.get(i).points);
 		}
+		System.out.println();
 	}
 }
