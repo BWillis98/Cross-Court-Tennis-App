@@ -1,0 +1,88 @@
+<!DOCTYPE CSS>
+
+body{
+        background-color: rgb(187, 187, 195) !important;
+    }
+.green-box {
+    background: rgba(139, 248, 185, 0.56);
+    padding: 25px 80px 7px 35px;
+    margin: 0px -30px 0px -30px;
+    border-style: solid;
+    border-width: 5px 0px 5px 0px;
+    border-color:#faf3ea;
+        }
+.gray-box {
+    background: rgb(187, 187, 195);
+    margin: -5px -4px -5px -4px;
+    padding: 40px 15px 20px 18px;
+    }
+.white-box {
+    background: rgb(227, 225, 230);
+    margin: -20px -4px -5px -20px;
+    padding: 40px 15px 20px 18px;
+    border-style: solid;
+    border-width: 7px;
+    border-color:  rgba(227, 225, 230, 0.97);
+    border-radius: 4px;
+    }
+h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 43.2px;
+    color: rgb(255, 255, 230);
+    }
+h2 {
+    font-family: 'Raleway', sans-serif;	
+    font-size: 60px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: light;
+	line-height: 20px;
+    color: rgb(252, 252, 239);
+    }
+h3 {
+	font-family: 'Cuprum', sans-serif;
+    font-size: 35px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 43.2px;
+    color: #848484;
+    }
+p {
+	font-family: 'Dosis', sans-serif;
+	font-size: 22px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 19.6px;
+    color: rgba(139, 248, 185, 0.77);
+    }
+.small-img {
+    width: 40px;
+    padding-top: 14px;
+    margin-left: -360px;
+    margin-bottom: -5px;
+    }
+.md-img {
+    width: 335px;
+    border-color: rgb(231, 255, 101);
+    border-style: inset;
+    border-radius: 20px;
+    border-width: 20px;
+    }
+.well {
+    margin: 50px 108px 0px 0px;
+    padding: 0px;
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    }
+.well > div {
+        
+}
+
